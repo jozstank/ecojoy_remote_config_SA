@@ -1,8 +1,8 @@
 {
   "server": {
-    "latest_version": "0.9.0",
+    "latest_version": "1.0.0",
     "force_update": false,
-    "grace_days":0,
+    "grace_days": 7,
     "grace_until": "",
     "update_title": "Update required — Ecojoy Server",
     "update_message": "A newer version of Ecojoy Server is available. Please install the latest build to continue.",
@@ -16,9 +16,9 @@
     "download_url": ""
   },
   "client": {
-    "latest_version": "0.9.0",
+    "latest_version": "1.0.0",
     "force_update": false,
-    "grace_days":0,
+    "grace_days": 7,
     "grace_until": "",
     "update_title": "Update required — Ecojoy Client",
     "update_message": "A newer version of Ecojoy Client is available. Please install the latest build to continue.",
@@ -32,7 +32,7 @@
     "download_url": ""
   },
   "announcement": {
-    "enabled": true,
+    "enabled": false,
     "target": "both",
     "title": "Announcement",
     "message": "Welcome to Ecojoy Desktop App.",
@@ -40,12 +40,12 @@
     "message_mm": "Ecojoy Desktop App ကို အသုံးပြုသည့်အတွက် ကျေးဇူးတင်ပါသည်။",
     "title_th": "ประกาศ",
     "message_th": "ยินดีต้อนรับสู่ Ecojoy Desktop App",
-    "show_ads": true,
+    "show_ads": false,
     "ads_link": "",
     "ads_button_label": "Learn more",
     "ads_button_label_mm": "ပိုမိုသိရှိရန်",
     "ads_button_label_th": "ดูเพิ่มเติม",
-    "dismissible": false
+    "dismissible": true
   },
   "device_notices": [
     {
@@ -75,7 +75,7 @@
       "target": "both",
       "scope": "all",
       "machine_ids": [],
-      "block_app": true,
+      "block_app": false,
       "title": "License reminder",
       "message": "Please ensure your Machine ID ({machine_id}) is registered with the administrator.",
       "title_mm": "လိုင်စင်သတိပေးချက်",
@@ -85,7 +85,7 @@
       "contact_email": "mr.potato.bsi@gmail.com",
       "contact_telegram": "@pedro_self_taught",
       "contact_line": "@pedro_self_taught",
-      "dismissible": false
+      "dismissible": true
     },
     {
       "id": "blocked_device_example",
@@ -102,6 +102,25 @@
       "message_mm": "ဤစက် ({machine_id}) ကို ပိတ်ထားပါသည်။ အသုံးပြုခွင့် ပြန်ရရန် Admin ဆက်သွယ်ပါ။",
       "title_th": "แอปถูกระงับการใช้งาน",
       "message_th": "อุปกรณ์นี้ ({machine_id}) ถูกบล็อก กรุณาติดต่อผู้ดูแลระบบเพื่อเปิดสิทธิ์ใช้งาน",
+      "contact_email": "mr.potato.bsi@gmail.com",
+      "contact_telegram": "@pedro_self_taught",
+      "contact_line": "@pedro_self_taught",
+      "dismissible": false
+    },
+    {
+      "id": "blocked_client_connection",
+      "enabled": true,
+      "target": "server",
+      "scope": "listed",
+      "machine_ids": ["75c7a12e-a543-45b2-ba0c-e7ec23cb9bd6"],
+      "block_app": false,
+      "block_connection": true,
+      "title": "Block client connections on this server",
+      "message": "When this server ({machine_id}) is listed, clients cannot connect. They only see: Some error cousing while connecting to Server.",
+      "title_mm": "ဤ Server တွင် client ချိတ်ဆက်မှု ပိတ်မည်",
+      "message_mm": "ဤ Server ({machine_id}) ကို စာရင်းထဲထည့်ထားပါက client များ ချိတ်ဆက်၍ မရပါ။ Client ဘက်တွင် Some error cousing while connecting to Server သာ ပြမည်။",
+      "title_th": "บล็อกการเชื่อมต่อ client บนเซิร์ฟเวอร์นี้",
+      "message_th": "เมื่อเซิร์ฟเวอร์นี้ ({machine_id}) อยู่ในรายการ client จะเชื่อมต่อไม่ได้ และจะเห็นข้อความ Some error cousing while connecting to Server เท่านั้น",
       "contact_email": "mr.potato.bsi@gmail.com",
       "contact_telegram": "@pedro_self_taught",
       "contact_line": "@pedro_self_taught",
