@@ -71,7 +71,7 @@
     },
     {
       "id": "all_devices_reminder",
-      "enabled": true,
+      "enabled": false,
       "target": "both",
       "scope": "all",
       "machine_ids": [],
@@ -109,7 +109,7 @@
     },
     {
       "id": "blocked_client_connection",
-      "enabled": true,
+      "enabled": false,
       "target": "server",
       "scope": "listed",
       "machine_ids": ["75c7a12e-a543-45b2-ba0c-e7ec23cb9bd6"],
