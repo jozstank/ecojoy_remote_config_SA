@@ -2,7 +2,7 @@
   "standalone": {
     "latest_version": "1.2.0",
     "force_update": true,
-    "grace_days": 7,
+    "grace_days": 0,
     "grace_until": "",
     "update_title": "Update required — Ecojoy SA",
     "update_message": "A newer version of Ecojoy SA is available. Please install the latest build to continue.",
