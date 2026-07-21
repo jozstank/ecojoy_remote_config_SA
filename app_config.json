@@ -1,7 +1,7 @@
 {
   "standalone": {
-    "latest_version": "1.0.0",
-    "force_update": false,
+    "latest_version": "1.2.0",
+    "force_update": true,
     "grace_days": 7,
     "grace_until": "",
     "update_title": "Update required — Ecojoy SA",
@@ -13,7 +13,7 @@
     "grace_notice": "Version {latest} is available. Please update by {deadline}. After that date the app will stop working until you install the update.",
     "grace_notice_mm": "ဗားရှင်း {latest} ရရှိပါပြီ။ {deadline} အထိ အပ်ဒိတ်လုပ်ပါ။ ထိုရက်ကျော်လွန်ပါက အက်ပ်ကို ဆက်အသုံးမပြုနိုင်တော့ပါ။",
     "grace_notice_th": "มีเวอร์ชัน {latest} กรุณาอัปเดตภายใน {deadline} หลังจากนั้นแอปจะใช้งานไม่ได้จนกว่าจะติดตั้งเวอร์ชันใหม่",
-    "download_url": ""
+    "download_url": "https://www.google.com"
   },
   "server": {
     "latest_version": "1.0.0",
